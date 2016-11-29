@@ -1,0 +1,67 @@
+body {
+    background-color: azure;
+    font-family: 'Trebuchet MS';
+    font-size: 1em;
+    color: darkred;
+}
+
+#classTitle {
+    padding-top = 0.25em;
+}
+
+#projectTitle {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+#teamMembers {
+    padding-top: 0.5em;
+    color: darkblue;
+}
+
+#instruction {
+    padding-top: 2em;
+    padding-left: 0.25em;
+    color: darkred;
+    text-decoration: underline;
+}
+
+button {
+    margin: 0.25em;
+}
+
+#pointCharges, #e_values {
+    margin-left: 0.25em;
+    color: darkblue;
+    padding-top: 2em;
+}
+
+#charges, #e_fields {
+    width: calc(100% - 0.5em);
+    border-bottom: 2px solid darkblue;
+}
+
+.xyz {
+    margin-right: 0.25em;
+}
+
+.mathPresentation {
+    font-family: 'Times New Roman';
+    font-size: 1.2em;
+}
+
+#addCharge, #setTarget {
+    padding-left: 0.25em;
+}
+
+#chargeValue {
+    color: red;
+}
+
+#chargeResult, #e_result {
+    padding-left: 0.15em;
+}
+
+#e_result {
+    color: red;
+}

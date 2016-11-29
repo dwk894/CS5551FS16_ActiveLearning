@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Observer Design Pattern - Electric Field Code Example</title>
+        <link rel = 'stylesheet' type = 'text/css' href = 'css/style.css'>
+        <script type = 'text/javascript' src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script type = 'text/javascript' src = 'js/lib/LinkedList.js'></script>
+        <script type = 'text/javascript' src = 'js/UnitConversion.js'></script>
+        <script type = 'text/javascript' src = 'js/Vector.js'></script>
+        <script type = 'text/javascript' src = 'js/ElectricField.js'></script>
+        <script type = 'text/javascript' src = 'js/Observer.js'></script>
+        <script type = 'text/javascript' src = 'js/app.js'></script>
+    </head>
+    <body>
+        <p id = 'classTitle' align = 'center'>COMP-SCI 5551 (FS16) - Advanced Software Engineering</p>
+        <p id = 'projectTitle' align = 'center'>Active Learning - <strong>Observer</strong> Design Pattern</p>
+        <p id = 'teamMembers' align = 'center'>
+            <strong>Team 1</strong>: 
+            <i>Joshua Neustrom (39)</i>, 
+            <i>Yunlong Liu (25)</i>, 
+            <i>Chen Wang (58)</i>, 
+            <i>Dayu Wang (59)</i>
+        </p>
+        
+        <!-- Explanation of the function of sample code -->
+        <p id = 'instruction'><strong>Code Example - Calculation of Electric Field in Cartesian Coordinate System</strong></p>
+        
+        <!-- User can place point charges at any location. -->
+        <p id = 'buttons'><button id = 'add'>Add Point Charge</button><button id = 'set'>Set Target Point</button></p>
+        <p id = 'addCharge'>
+            <a class = 'mathPresentation'><i><strong>x</strong></i></a> = <input id = 'add_x' class = 'xyz' type = 'number' placeholder = 'inches'>
+            <a class = 'mathPresentation'><i><strong>y</strong></i></a> = <input id = 'add_y' class = 'xyz' type = 'number' placeholder = 'inches'>
+            <a class = 'mathPresentation'><i><strong>z</strong></i></a> = <input id = 'add_z' class = 'xyz' type = 'number' placeholder = 'inches'>
+            <a id = 'chargeValue'><i><strong>Charge</strong></i></a> = <input id = 'add_c' class = 'xyz' type = 'number' placeholder = 'unit: e'>
+            <button id = 'add2'>Add</button>
+            <button id = 'cancelAdd'>Cancel</button>
+        </p>
+        <p id = 'setTarget'>
+            <a class = 'mathPresentation'><i><strong>x</strong></i></a> = <input id = 'set_x' class = 'xyz' type = 'number' placeholder = 'inches'>
+            <a class = 'mathPresentation'><i><strong>y</strong></i></a> = <input id = 'set_y' class = 'xyz' type = 'number' placeholder = 'inches'>
+            <a class = 'mathPresentation'><i><strong>z</strong></i></a> = <input id = 'set_z' class = 'xyz' type = 'number' placeholder = 'inches'>
+            <button id = 'set2'>Set</button>
+            <button id = 'cancelSet'>Cancel</button>
+        </p>
+        
+        <!-- List current point charges. -->
+        <table id = 'charges'><tr><td id = 'pointCharges'><strong>Point Charges</strong></td></tr></table>
+        <div id = 'chargeResult' style = 'color: gray;'><p>Currently no charge...</p></div>
+        
+        <!-- Show current results. -->
+        <table id = 'e_fields'><tr><td id = 'e_values'><strong>Electric Fields (Result in V/m)</strong></td></tr></table>
+        <div id = 'e_result'></div>
+    </body>
+</html>
